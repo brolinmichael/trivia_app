@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragments.ChooseColorFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp">
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="What are the colors in the Indian national flag? "
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"/>
+
+        <CheckBox
+            android:id="@+id/cbWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="White"
+            android:textColor="@color/white"
+            android:layout_below="@id/tvLabel"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:buttonTint="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <CheckBox
+            android:id="@+id/cbYellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Yellow"
+            android:buttonTint="@color/white"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_below="@id/cbWhite"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/cbOrange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Orange"
+            android:buttonTint="@color/white"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/cbYellow"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/cbGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Green"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:buttonTint="@color/white"
+            android:textColor="@color/white"
+            android:layout_below="@id/cbOrange"
+            android:layout_marginTop="8dp"/>
+
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbGreen"
+            android:text="Next"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/darkBlue"
+            android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

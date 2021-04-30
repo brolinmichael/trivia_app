@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/enterNameFragment">
+
+    <fragment
+        android:id="@+id/enterNameFragment"
+        android:name="com.example.triviaapp.fragments.EnterNameFragment"
+        android:label="fragment_enter_name"
+        tools:layout="@layout/fragment_enter_name">
+        <action
+            android:id="@+id/action_enterNameFragment_to_chooseCricketerFragment"
+            app:destination="@id/chooseCricketerFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/chooseCricketerFragment"
+        android:name="com.example.triviaapp.fragments.ChooseCricketerFragment"
+        android:label="fragment_choose_cricketer"
+        tools:layout="@layout/fragment_choose_cricketer" >
+        <action
+            android:id="@+id/action_chooseCricketerFragment_to_chooseColorFragment"
+            app:destination="@id/chooseColorFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"/>
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseColorFragment"
+        android:name="com.example.triviaapp.fragments.ChooseColorFragment"
+        android:label="fragment_choose_color"
+        tools:layout="@layout/fragment_choose_color" >
+        <action
+            android:id="@+id/action_chooseColorFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"/>
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="cricketer"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.triviaapp.fragments.SummaryFragment"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" >
+        <action
+            android:id="@+id/action_summaryFragment_to_enterNameFragment"
+            app:destination="@id/enterNameFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"/>
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="cricketer"
+            app:argType="string" />
+        <argument
+            android:name="color"
+            app:argType="string" />
+    </fragment>
+</navigation>

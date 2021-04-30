@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="20dp"
+    tools:context=".fragments.SummaryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="22dp"
+            android:layout_marginTop="10dp"
+            android:text="Name : Brolin"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="14dp"
+            android:layout_marginTop="16dp"
+            android:text="Here are the answers selected :"
+            android:layout_below="@id/tvName"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvQuestionOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="16dp"
+            android:text="Who is the best cricketer in the world?"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tvLabel"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvCricketer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="16dp"
+            android:text="Sachin"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvQuestionOne"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvQuestionTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="16dp"
+            android:text="What are the colours in the national flag?"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvCricketer"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="16dp"
+            android:text="Red"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvQuestionTwo"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Finish"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_baseline_done_24"
+            android:layout_marginRight="16dp" />
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="History"
+            android:textColor="#fff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="@color/darkBlue"
+            android:drawableLeft="@drawable/ic_baseline_history_24"
+            android:layout_marginLeft="16dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

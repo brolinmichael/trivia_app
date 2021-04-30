@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragments.EnterNameFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is your name?"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_below="@id/tvLabel"
+            android:hint="Enter your name"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/shape_rectangle"
+            android:paddingVertical="11dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="40dp"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etName"
+            android:layout_marginTop="35dp"
+            android:background="@color/blue"
+            android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+            android:backgroundTint="@color/darkBlue"
+            android:layout_centerHorizontal="true"
+            android:text="next"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
